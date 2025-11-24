@@ -79,7 +79,7 @@ namespace Lab5
             driver.Navigate().GoToUrl(BaseUrl + "dynamic_controls");
             driver.FindElement(By.CssSelector("#checkbox-example button")).Click();
             var msg = wait.Until(d => d.FindElement(By.Id("message")));
-            Assert.That(msg.Text, Is.EqualTo("It's gone!"));
+            Assert.That(msg.Text, Is.EqualTo("It's gone!")); 
         }
 
         [Test]
